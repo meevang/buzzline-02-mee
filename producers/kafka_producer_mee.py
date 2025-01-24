@@ -1,5 +1,5 @@
 """
-kafka_producer_case.py
+kafka_producer_mee.py
 
 Produce some streaming buzz strings and send them to a Kafka topic.
 """
@@ -65,11 +65,11 @@ def generate_messages(producer, topic, interval_secs):
 
     """
     string_list: list = [
-        "I love Python!",
-        "Kafka is awesome.",
-        "Streaming data is fun.",
-        "This is a buzz message.",
-        "Have a great day!",
+        "There are so many things to do in Puerto Rico!",
+        "Take a tour of Old San Juan.",
+        "Let's check out the rainforest.",
+        "The food was delicious.",
+        "Lets's go relax at the beach!",
     ]
     try:
         while True:
