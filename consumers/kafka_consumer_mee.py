@@ -61,6 +61,22 @@ def process_message(message: str) -> None:
     """
     logger.info(f"Processing message: {message}")
 
+    # Check if the message is "Let's go check out the beach!"
+    if message == "Let's go check out the beach!":
+        logger.info("ALERT: Special message received: 'Let's go check out the beach!'")
+        # Add any other alerting mechanism you want here, like sending an email or triggering a sound.
+        # For example, you could raise a custom exception or call another function to send an alert.
+        alert_beach_message()
+
+def alert_beach_message() -> None:
+    """
+    A function to handle special alert actions when the message is "Let's go check out the beach!".
+    """
+    logger.warning("ALERT: It's time to check out the beach!")
+    # Here you can add more alerting functionality (like sending a notification, or an email)
+    # For example, you could integrate with an SMS/Email service to send notifications.
+
+
 
 #####################################
 # Define main function for this module
